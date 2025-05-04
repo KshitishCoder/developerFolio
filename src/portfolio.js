@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Kshitish Sahoo",
-  title: "Hi all, I'm Kshitish",
+  title: "Hi, I'm Kshitish",
   subTitle: emoji(
-    "A passionate and results-driven DevOps Engineer with 9+ years of experience in cloud infrastructure, CI/CD pipelines, and container orchestration. I work with tools like AWS, Docker, Kubernetes, Jenkins, and ArgoCD to build scalable and secure systems. I love automating workflows, solving infrastructure challenges, and contributing to clean, efficient DevOps solutions."
+    "A passionate and results-driven DevOps Engineer 👨🏼‍💻 with 9+ years of experience in cloud infrastructure, CI/CD pipelines, and container orchestration. I work with tools like AWS, Helm Charts, Kubernetes, Jenkins, and ArgoCD to build scalable and secure systems. I love automating workflows, solving infrastructure challenges, and contributing to clean, efficient DevOps solutions."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -61,63 +61,151 @@ const socialMediaLinks = {
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-  softwareSkills: [
-    {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "Kubernetes",
-      fontAwesomeClassname: "devicon-kubernetes-plain"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "Helm",
-      fontAwesomeClassname: "fas fa-ship"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
-  ],
+softwareSkills: [
+  {
+    skillName: "Docker",
+    fontAwesomeClassname: "devicon-docker-plain"
+  },
+  {
+    skillName: "Kubernetes",
+    fontAwesomeClassname: "devicon-kubernetes-plain"
+  },
+  {
+    skillName: "Helm",
+    fontAwesomeClassname: "devicon-helm-original"
+  },
+  {
+    skillName: "Jenkins",
+    fontAwesomeClassname: "devicon-jenkins-plain"
+  },
+  {
+    skillName: "Git",
+    fontAwesomeClassname: "devicon-git-plain"
+  },
+  {
+    skillName: "GitHub",
+    fontAwesomeClassname: "devicon-github-original"
+  },
+  {
+    skillName: "GitLab",
+    fontAwesomeClassname: "devicon-gitlab-plain"
+  },
+  {
+    skillName: "AWS",
+    fontAwesomeClassname: "devicon-amazonwebservices-plain-wordmark"
+  },
+  {
+    skillName: "Python",
+    fontAwesomeClassname: "devicon-python-plain"
+  },
+  {
+    skillName: "PHP",
+    fontAwesomeClassname: "devicon-php-plain"
+  },
+  {
+    skillName: "Linux",
+    fontAwesomeClassname: "devicon-linux-plain"
+  },
+  {
+    skillName: "PostgreSQL",
+    fontAwesomeClassname: "devicon-postgresql-plain"
+  },
+  {
+    skillName: "MongoDB",
+    fontAwesomeClassname: "devicon-mongodb-plain"
+  },
+  //{
+  //  skillName: "Terraform",
+  //  fontAwesomeClassname: "devicon-terraform-plain"
+  //},
+  //{
+  //  skillName: "Ansible",
+  //  fontAwesomeClassname: "devicon-ansible-plain"
+  //},
+  {
+    skillName: "Bash",
+    fontAwesomeClassname: "devicon-bash-plain"
+  },
+  {
+    skillName: "ArgoCD",
+    fontAwesomeClassname: "devicon-argocd-plain-wordmark"
+  },
+  {
+    skillName: "Postman",
+    fontAwesomeClassname: "devicon-postman-plain"
+  },
+  {
+    skillName: "Cloud Monitoring",
+    fontAwesomeClassname: "fas fa-chart-line"  // general monitoring icon
+  },
+  {
+    skillName: "New Relic",
+    fontAwesomeClassname: "fas fa-tachometer-alt"  // symbolic
+  },
+  {
+    skillName: "Splunk",
+    fontAwesomeClassname: "devicon-splunk-original-wordmark"
+  }
+],
   display: true // Set false to hide this section, defaults to true
 };
 
+//Tools Proficiency ProgressBar
+export const proficiencySection = {
+  title: "Proficiency",
+  skills: [
+    {
+      name: "DevOps / Cloud Infrastructure",
+      percentage: "90",
+    },
+    {
+      name: "CI/CD & Automation (Jenkins, ArgoCD, GitHub Actions)",
+      percentage: "85",
+    },
+    {
+      name: "Containerization (Docker, Kubernetes, Helm)",
+      percentage: "85",
+    },
+    {
+      name: "Cloud Services (AWS, Lambda, S3, EC2)",
+      percentage: "80",
+    },
+    {
+      name: "Scripting (Python, Bash, PHP)",
+      percentage: "75",
+    },
+    {
+      name: "Monitoring & Logging (CloudWatch, Splunk, New Relic)",
+      percentage: "70",
+    },
+  ]
+};
+
+// Work experience section
+
+const workExperiences = {
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "DevOps Engineer",
+      company: "TCS (Tata Consultancy Services)",
+      companylogo: require("./assets/images/tcslogo.png"),
+      date: "Nov 2022 – Present",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      descBullets: [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      ]
+    },
+    {
+      role: "DevOps Engineer",
+      company: "Envestnet | Yodlee Inc.",
+      companylogo: require("./assets/images/EnevestnetLogo.png"),
+      date: "April 2016 – Nov 2022",
+      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }
+  ]
+};
 // Education Section
 
 const educationInfo = {
@@ -144,99 +232,11 @@ const educationInfo = {
     }
   ]
 };
-
-// Your top 3 proficient stacks/tech experience
-
-const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
-  experience: [
-    {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
-    },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
-  ],
-  displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
-
-// Work experience section
-
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-  ]
-};
-
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
 
 const openSource = {
   showGithubProfile: "true", // Set true or false to show Contact profile using Github, defaults to true
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Some big projects you have worked on
-
-const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
-  projects: [
-    {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
-        }
-        //  you can add extra buttons here.
-      ]
-    },
-    {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      footerLink: [
-        {
-          name: "Visit Website",
-          url: "http://nextu.se/"
-        }
-      ]
-    }
-  ],
   display: true // Set false to hide this section, defaults to true
 };
 
@@ -324,39 +324,6 @@ const blogSection = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
-
-// Talks Sections
-
-const talkSection = {
-  title: "TALKS",
-  subtitle: emoji(
-    "I LOVE TO SHARE MY LIMITED KNOWLEDGE AND GET A SPEAKER BADGE 😅"
-  ),
-
-  talks: [
-    {
-      title: "Build Actions For Google Assistant",
-      subtitle: "Codelab at GDG DevFest Karachi 2019",
-      slides_url: "https://bit.ly/saadpasta-slides",
-      event_url: "https://www.facebook.com/events/2339906106275053/"
-    }
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
-// Podcast Section
-
-const podcastSection = {
-  title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
-
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
-  ],
-  display: true // Set false to hide this section, defaults to true
-};
-
 // Resume Section
 const resumeSection = {
   title: "Resume",
@@ -370,8 +337,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  //number: "+92-0000000000",
+  email_address: "kksahoo16@gmail.com"
 };
 
 // Twitter Section
@@ -389,15 +356,11 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
-  educationInfo,
-  techStack,
   workExperiences,
+  educationInfo,
   openSource,
-  bigProjects,
   achievementSection,
   blogSection,
-  talkSection,
-  podcastSection,
   contactInfo,
   twitterDetails,
   isHireable,
