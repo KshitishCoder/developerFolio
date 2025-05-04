@@ -10,7 +10,7 @@ import splashAnimation from "./assets/lottie/splashAnimation"; // Rename to your
 const splashScreen = {
   enabled: true, // set false to disable splash screen
   animation: splashAnimation,
-  duration: 2000 // Set animation duration as per your animation
+  duration: 1000 // Set animation duration as per your animation
 };
 
 // Summary And Greeting Section
@@ -36,6 +36,7 @@ const socialMediaLinks = {
   github: "https://github.com/KshitishCoder",
   linkedin: "https://www.linkedin.com/in/kshitish-sahoo",
   gmail: "kksahoo16@gmail.com",
+  twitter: "",
   //gitlab: "https://gitlab.com/saadpasta",
   //medium: "https://medium.com/@saadpasta",
   //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
@@ -47,7 +48,7 @@ const socialMediaLinks = {
 // Skills Section
   const skillsSection = {
     title: "What I Do",
-    subTitle: "PASSIONATE DEVOPS ENGINEER AUTOMATING INFRASTRUCTURE AND DEPLOYMENTS IN THE CLOUD",
+    subTitle: "BUILDING SCALABLE, SECURE, AND AUTOMATED INFRASTRUCTURE THROUGH DEVOPS BEST PRACTICES",
     skills: [
       emoji("⚡ Design and implement CI/CD pipelines using Jenkins, ArgoCD, and GitHub Actions"),
       emoji("⚡ Build and manage containerized applications with Docker, Kubernetes, and Helm"),
@@ -79,16 +80,8 @@ softwareSkills: [
     fontAwesomeClassname: "devicon-jenkins-plain"
   },
   {
-    skillName: "Git",
-    fontAwesomeClassname: "devicon-git-plain"
-  },
-  {
     skillName: "GitHub",
     fontAwesomeClassname: "devicon-github-original"
-  },
-  {
-    skillName: "GitLab",
-    fontAwesomeClassname: "devicon-gitlab-plain"
   },
   {
     skillName: "AWS",
@@ -191,10 +184,13 @@ const workExperiences = {
       company: "TCS (Tata Consultancy Services)",
       companylogo: require("./assets/images/tcslogo.png"),
       date: "Nov 2022 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "In my current role, I focus on automating CI/CD workflows using Jenkins, ArgoCD, and GitLab, while managing containerized deployments with Docker, Kubernetes, and Helm. I work extensively on AWS services including EKS, Lambda, S3, EC2, and EMR, ensuring scalable and reliable infrastructure. I also develop automation scripts in Python and Bash, and monitor system performance using CloudWatch and Splunk to maintain operational excellence.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "CI/CD & Automation: Jenkins, ArgoCD, GitLab, Helm Charts",
+        "Cloud Services: AWS, EKS, Lambda, S3, EC2, Elastic Cache, EMR etc.",
+        "Containerization: Docker, Kubernetes",
+        "Scripting & Programming: Python, Bash",
+        "Monitoring & Logging: CloudWatch, Splunk"
       ]
     },
     {
@@ -202,14 +198,14 @@ const workExperiences = {
       company: "Envestnet | Yodlee Inc.",
       companylogo: require("./assets/images/EnevestnetLogo.png"),
       date: "April 2016 – Nov 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      desc: "I was responsible for automating and managing end-to-end CI/CD pipelines using Jenkins, while provisioning and configuring infrastructure with Chef and Bash scripting. I handled deployment and monitoring of applications on JBoss servers, integrated Nagios and ELK Stack for system health checks, and streamlined environment provisioning for Dev, QA, and Production. Additionally, I developed custom scripts for deployments, log management, and system automation, implemented single-click deployments, and integrated Linux servers with SSO for secure access and seamless operations."
     }
   ]
 };
 // Education Section
 
 const educationInfo = {
-  display: true, // Set false to hide this section, defaults to true
+  display: false, // Set false to hide this section, defaults to true
   schools: [
     {
       schoolName: "Harvard University",
@@ -298,7 +294,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -322,7 +318,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 // Resume Section
 const resumeSection = {
